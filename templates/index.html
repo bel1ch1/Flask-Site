@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>AndreyZV</title>
+
+    <style>
+      .svoya-img {
+        width: 70%;
+        border-radius: 60%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 0.3em;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+
+        <a class="navbar-brand p-0">
+          <img src="https://e7.pngegg.com/pngimages/41/701/png-clipart-logo-graphic-design-graphy-grapher-logo-graphy-angle-text.png" alt="Logo" width="40" height="40" />
+        </a>
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="my_social.html">My social media</a>
+            <a class="nav-link" href="also.html">Also</a>
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container text-center my-5" id="101">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <img
+            id="110"
+            class="svoya-img"
+            src="https://ростр.рф/assets/img/no-profile.png"
+            alt="Ошибка загрузки фото"
+          />
+          <h1 class="fw-light">Звонков Андрей</h1>
+          <p class="lead text-muted">Мне 19 лет</p>
+          <p class="lead text-muted">Учусь на втором курсе</p>
+          <p class="lead text-muted">Занимаюсь разработкой в сфере машинного обучения</p>
+          <button type="button" class="btn btn-primary">Like!</button>
+          <button class="btn btn-danger" onclick="alert('Вы подписались на обновления этого пользователя')">Folow</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener('error', function(e) {
+          console.log(e);
+      }, true);
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
