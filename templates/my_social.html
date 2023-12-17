@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -13,6 +13,28 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         padding: 0.3em;
         margin-bottom: 1em;
+      }
+      ul.nav{
+        margin-left: 0px;
+        padding-left: 0px;
+        list-style: none;
+      }
+      .nav li {
+        display: flex;
+      }
+      ul.nav a {
+        display: inline-block;
+        width: 5em;
+        padding:10px;
+        background-color: #f4f4f4;
+        border: 1px dashed #333;
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+      }
+      ul.nav a:hover{
+          background-color: #333;
+          color: #f4f4f4;
       }
     </style>
     <style>
@@ -31,7 +53,7 @@
 
   <body>
     <ul class="nav">
-      <li><a href="index.html">home</a></li>
+      <li><a href="/">home</a></li>
       <li><a href="my_social.html">my social media</a></li>
       <li><a href="also.html">Also</a></li>
   </ul>

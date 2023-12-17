@@ -1,10 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, errors
+from app import routes
 
 app = Flask(__name__)
 
 
 @app.route("/")
-def index():
+def home():
     return render_template("index.html")
 
 
@@ -19,8 +20,8 @@ def my_social():
 
 
 @app.errorhandler(404)
-def not_found(e):
-    return render_template("bg_404.html")
+def not_found_error(error):
+    return render_template('bad_404.html'), 404
 
 
 if __name__ == "__main__":
