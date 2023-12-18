@@ -1,12 +1,11 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 import datetime
 
 app = Flask(__name__)
 
 
-@app.errorhandler(404)
-def not_found_error(error):
-    return render_template('404.html'), 404
+file_path = 'output.txt'
+
 
 @app.route("/")
 @app.route("/home")
@@ -24,11 +23,12 @@ def my_social():
     return render_template("my_social.html")
 
 
-def buttonLike():
-    with open('button_logs.txt', 'a') as file:
-        timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        file.write(f'Button pressed at {timestamp}\n')
-    return 'Button press logged'
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template("bad_404.html"), 404
+
+
+
 
 if __name__ == '__main__':
     app.run()
